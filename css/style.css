@@ -17,7 +17,8 @@ body{
 .header{
     width: 380px;
     height:200px;
-    background-image: url('../img/');
+    /*background-image: url('../img/');*/
+    background-color: #00457C;
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -75,13 +76,16 @@ body{
 
 .item{
     width:380px;
-    height: 45px;
     min-height: 45px;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.item:hover{
+  background-color: #0079C1;
 }
 
 .item i.co{
@@ -103,7 +107,7 @@ body{
     font-size: 20px;
     left:50px;
     top:5px;
-    background-color: #FFF;
+    background-color: transparent;
     max-width:285px;
 }
 
@@ -115,7 +119,7 @@ body{
 }
 
 .item i.ar:hover{
-    color:#4162f6;
+    color:#6eb200;
     cursor: pointer;
 }
 
@@ -128,6 +132,19 @@ body{
 .item i.de:hover{
     color:#af0000;
     cursor: pointer;
+}
+
+/* ------------ Sub item ------------ */
+
+#sublist{
+  position: relative;
+  background-color: #FFF; /* Colour of the background needs to be here*/
+  top: 45px;
+  padding-bottom: 45px;
+}
+
+#sublist:hover{
+  background-color: #FFF; /* Colour of the background needs to be here*/
 }
 
 .Subitem{
@@ -195,7 +212,7 @@ body{
     cursor: pointer;
 }
 
-/* ------------ Sub item ------------ */
+
 /* ------------ add item ------------ */
 .add-to-do{
     position: relative;
